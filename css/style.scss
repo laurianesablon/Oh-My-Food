@@ -1,6 +1,40 @@
 @forward "globals";
 
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.29);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  animation-delay: 2s;
 
+
+  .ball {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: 40;
+  }
+  .one {
+    background-color: var(--pink);
+    transform: translateY(500px);
+    animation: 1500ms;
+
+  }
+  .two {
+    background-color: var(--green);
+    transform: translateY(500px);
+    animation: 1700ms;
+  }
+  .three {
+    background-color: var(--purple);
+    transform: translateY(500px);
+    animation: 1900ms;
+  }
+}
 
 header {
   display: flex;
@@ -64,7 +98,11 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   }
   button:hover {
-    background-clip: linear-gradient(to bottom, var(--button-light-pink),var(--button-light-purple));
+    background-clip: linear-gradient(
+      to bottom,
+      var(--button-light-pink),
+      var(--button-light-purple)
+    );
   }
 }
 

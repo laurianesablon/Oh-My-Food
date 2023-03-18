@@ -15,6 +15,39 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.29);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  animation-delay: 2s;
+}
+#loader .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  z-index: 40;
+}
+#loader .one {
+  background-color: var(--pink);
+  transform: translateY(500px);
+  animation: 1500ms;
+}
+#loader .two {
+  background-color: var(--green);
+  transform: translateY(500px);
+  animation: 1700ms;
+}
+#loader .three {
+  background-color: var(--purple);
+  transform: translateY(500px);
+  animation: 1900ms;
+}
+
 header {
   display: flex;
   flex-direction: column;
