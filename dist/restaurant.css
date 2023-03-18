@@ -1,10 +1,13 @@
+@charset "UTF-8";
 :root {
-  --main-background-color: #EAEAEA;
+  --main-background-color:#EAEAEA;
   --purple: #9356DC;
   --pink: #FF79DA;
   --green: #99E2D0;
   --light-purple: #F5EDFF;
   --footer-color: #353535;
+  --button-light-pink: #fd96e0;
+  --button-light-purple: #a981d9;
 }
 
 body {
@@ -91,6 +94,13 @@ main .top__main i {
   margin-right: 20px;
   font-size: 30px;
 }
+main .top__main i:hover {
+  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 main .entree,
 main .plat,
 main .dessert {
@@ -116,13 +126,13 @@ main .plat .card,
 main .dessert .card {
   background-color: white;
   display: flex;
+  justify-content: space-between;
   border-radius: 25px;
-  flex-direction: column;
-  justify-content: center;
+  height: 88px;
   width: 90%;
-  padding: 15px;
   margin: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   main .entree .card,
@@ -131,30 +141,81 @@ main .dessert .card {
     width: 70%;
   }
 }
-main .entree .card__title,
-main .plat .card__title,
-main .dessert .card__title {
+main .entree .card h4,
+main .plat .card h4,
+main .dessert .card h4 {
   margin: 5px;
   font-size: 22px;
+  font-weight: 700;
 }
-main .entree .card__content,
-main .plat .card__content,
-main .dessert .card__content {
+main .entree .card__text,
+main .plat .card__text,
+main .dessert .card__text {
+  border: 1px blue solid;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
-main .entree .card__content p,
-main .plat .card__content p,
-main .dessert .card__content p {
+main .entree .card__left,
+main .plat .card__left,
+main .dessert .card__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  overflow: hidden;
+}
+main .entree .card__left p,
+main .plat .card__left p,
+main .dessert .card__left p {
   margin: 5px;
   font-weight: 300;
   font-size: 22px;
+  text-overflow: "…";
+}
+main .entree .card__right,
+main .plat .card__right,
+main .dessert .card__right {
+  display: flex;
 }
 main .entree .card__price,
 main .plat .card__price,
 main .dessert .card__price {
   font-weight: 700;
   color: #353535;
+  margin-right: 20px;
+  align-self: end;
+  transform: translateX(100px);
+}
+main .entree .card__check,
+main .plat .card__check,
+main .dessert .card__check {
+  background-color: var(--green);
+  height: 100%;
+  width: 100px;
+  border-radius: 0px 25px 25px 0px;
+  transform: translateX(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .entree .card__check i,
+main .plat .card__check i,
+main .dessert .card__check i {
+  color: white;
+  font-size: 35px;
+}
+main .card:hover .card__check {
+  transform: translateX(0px);
+  transition: 500ms;
+}
+main .card:hover .card__price {
+  transform: translateX(0px);
+  transition: 500ms;
+}
+main .card:hover i {
+  transform: rotate(-365deg);
+  transition: 800ms;
 }
 main .btn__commander {
   height: 50px;
@@ -167,6 +228,9 @@ main .btn__commander {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
   margin-bottom: 40px;
+}
+main .btn__commander:hover {
+  background: linear-gradient(to bottom, var(--button-light-pink), var(--button-light-purple));
 }
 
 footer {

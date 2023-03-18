@@ -1,10 +1,12 @@
 :root {
-  --main-background-color: #EAEAEA;
+  --main-background-color:#EAEAEA;
   --purple: #9356DC;
   --pink: #FF79DA;
   --green: #99E2D0;
   --light-purple: #F5EDFF;
   --footer-color: #353535;
+  --button-light-pink: #fd96e0;
+  --button-light-purple: #a981d9;
 }
 
 body {
@@ -76,6 +78,9 @@ header p {
   border-radius: 25px;
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.explore button:hover {
+  background-clip: linear-gradient(to bottom, var(--button-light-pink), var(--button-light-purple));
 }
 
 .fonctionnement {
@@ -224,6 +229,11 @@ header p {
   color: #008766;
   border-radius: 3px;
   font-size: 14px;
+}
+
+a:hover {
+  scale: 1.02;
+  transition: 500ms;
 }
 
 footer {
