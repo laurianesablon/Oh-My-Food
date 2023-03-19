@@ -228,6 +228,7 @@ header p {
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 @media (min-width: 1440px) {
   #restaurants a .card__restaurants {
@@ -241,6 +242,24 @@ header p {
   -o-object-fit: cover;
      object-fit: cover;
 }
+#restaurants a .card__restaurants i {
+  font-size: 30px;
+  position: absolute;
+  right: 15px;
+}
+#restaurants a .card__restaurants .far {
+  color: black;
+}
+#restaurants a .card__restaurants .fas {
+  color: transparent;
+}
+#restaurants a .card__restaurants .fas:hover {
+  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+          background-clip: text;
+  transform: scale(1.3);
+  transition: 400ms;
+}
 #restaurants a .card__restaurants .card-title {
   font-size: 18px;
   font-weight: 700;
@@ -251,21 +270,10 @@ header p {
   justify-content: space-between;
   color: black;
 }
-#restaurants a .card__restaurants .card-title i {
-  margin-right: 20px;
-  font-size: 30px;
-  position: absolute;
-  left: 90%;
-}
-#restaurants a .card__restaurants .card-title .fas {
-  color: transparent;
-}
-#restaurants a .card__restaurants .card-title .fas:hover {
-  background: linear-gradient(to bottom, var(--pink), var(--purple));
-  -webkit-background-clip: text;
-          background-clip: text;
-  transform: scale(1.3);
-  transition: 400ms;
+@media (min-width: 1440px) {
+  #restaurants a .card__restaurants .card-title {
+    right: 15px;
+  }
 }
 #restaurants a .card__restaurants .card-text {
   font-size: 17px;
@@ -275,29 +283,17 @@ header p {
   margin-top: 5px;
   padding-bottom: 14px;
 }
-#restaurants a .card__restaurants .nouveau1 {
-  font-weight: bold;
-  z-index: 1;
-  background-color: #99e2d0;
-  color: #1a8a68;
-  width: 80px;
-  text-align: center;
-  right: 3em;
-  top: 50em;
-  position: absolute;
-  padding: 5px;
+#restaurants a .nouveau {
+  position: relative;
 }
-#restaurants a .card__restaurants .nouveau2 {
-  font-weight: bold;
-  z-index: 1;
-  background-color: #99e2d0;
-  color: #1a8a68;
-  width: 80px;
-  text-align: center;
-  right: 3em;
-  top: 69.5em;
+#restaurants a .nouveau::before {
   position: absolute;
+  content: "Nouveau";
+  background-color: var(--green);
   padding: 5px;
+  color: #008766;
+  right: 10px;
+  top: 10px;
 }
 
 footer {
@@ -306,6 +302,10 @@ footer {
   padding-bottom: 5px;
   color: white;
   height: 114px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 footer ul {
   list-style-type: none;
