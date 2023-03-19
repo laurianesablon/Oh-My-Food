@@ -73,15 +73,21 @@ main {
     i {
       margin-right: 20px;
       font-size: 30px;
+      position: sticky;
+      left: 90%;
     }
-    i:hover {
+    .fas {
+      color: transparent;
+    }
+    .fas:hover {
       background: linear-gradient(to bottom, var(--pink),var(--purple));
       background-clip: text;
-	    -webkit-text-fill-color: transparent;
-      color: transparent;
-
-    }
+      transform: scale(1.3);
+      transition: 400ms;
+      }
   }
+
+
   .entree,
   .plat,
   .dessert {
