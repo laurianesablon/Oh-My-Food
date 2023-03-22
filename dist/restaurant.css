@@ -20,6 +20,32 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%, 75%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: O;
+    display: none;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -69,6 +95,7 @@ main {
   border-radius: 20px 20px 0px 0px;
   position: relative;
   z-index: 14;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   main {
@@ -97,7 +124,7 @@ main .top__main h1 {
 main .top__main i {
   margin-right: 20px;
   font-size: 30px;
-  position: sticky;
+  position: absolute;
   left: 90%;
 }
 main .top__main .fas {
@@ -110,29 +137,48 @@ main .top__main .fas:hover {
   transform: scale(1.3);
   transition: 400ms;
 }
-main .entree,
-main .plat,
-main .dessert {
+main .menu .entree,
+main .menu .plat,
+main .menu .dessert {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .entree h4,
-main .plat h4,
-main .dessert h4 {
+main .menu .entree .card:nth-child(1),
+main .menu .plat .card:nth-child(1),
+main .menu .dessert .card:nth-child(1) {
+  animation-delay: 100ms;
+}
+main .menu .entree .card:nth-child(2),
+main .menu .plat .card:nth-child(2),
+main .menu .dessert .card:nth-child(2) {
+  animation-delay: 200ms;
+}
+main .menu .entree .card:nth-child(3),
+main .menu .plat .card:nth-child(3),
+main .menu .dessert .card:nth-child(3) {
+  animation-delay: 300ms;
+}
+main .menu .entree .card:nth-child(4),
+main .menu .plat .card:nth-child(4),
+main .menu .dessert .card:nth-child(4) {
+  animation-delay: 400ms;
+}
+main .menu .entree h4,
+main .menu .plat h4,
+main .menu .dessert h4 {
   font-size: 20px;
   font-weight: 300;
-  align-self: flex-start;
   margin-left: 15px;
 }
-main .entree h4 span,
-main .plat h4 span,
-main .dessert h4 span {
+main .menu .entree h4 span,
+main .menu .plat h4 span,
+main .menu .dessert h4 span {
   border-bottom: var(--green) 4px solid;
 }
-main .entree .card,
-main .plat .card,
-main .dessert .card {
+main .menu .entree .card,
+main .menu .plat .card,
+main .menu .dessert .card {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -142,63 +188,64 @@ main .dessert .card {
   margin: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  animation: appear 8 0ms;
 }
 @media (min-width: 1024px) {
-  main .entree .card,
-  main .plat .card,
-  main .dessert .card {
-    width: 70%;
+  main .menu .entree .card,
+  main .menu .plat .card,
+  main .menu .dessert .card {
+    width: 80%;
   }
 }
-main .entree .card h4,
-main .plat .card h4,
-main .dessert .card h4 {
+main .menu .entree .card h4,
+main .menu .plat .card h4,
+main .menu .dessert .card h4 {
   margin: 5px;
   font-size: 22px;
   font-weight: 700;
 }
-main .entree .card__text,
-main .plat .card__text,
-main .dessert .card__text {
+main .menu .entree .card__text,
+main .menu .plat .card__text,
+main .menu .dessert .card__text {
   border: 1px blue solid;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-main .entree .card__left,
-main .plat .card__left,
-main .dessert .card__left {
+main .menu .entree .card__left,
+main .menu .plat .card__left,
+main .menu .dessert .card__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
   overflow: hidden;
 }
-main .entree .card__left p,
-main .plat .card__left p,
-main .dessert .card__left p {
+main .menu .entree .card__left p,
+main .menu .plat .card__left p,
+main .menu .dessert .card__left p {
   margin: 5px;
   font-weight: 300;
   font-size: 22px;
   text-overflow: "…";
 }
-main .entree .card__right,
-main .plat .card__right,
-main .dessert .card__right {
+main .menu .entree .card__right,
+main .menu .plat .card__right,
+main .menu .dessert .card__right {
   display: flex;
 }
-main .entree .card__price,
-main .plat .card__price,
-main .dessert .card__price {
+main .menu .entree .card__price,
+main .menu .plat .card__price,
+main .menu .dessert .card__price {
   font-weight: 700;
   color: #353535;
   margin-right: 20px;
   align-self: end;
   transform: translateX(100px);
 }
-main .entree .card__check,
-main .plat .card__check,
-main .dessert .card__check {
+main .menu .entree .card__check,
+main .menu .plat .card__check,
+main .menu .dessert .card__check {
   background-color: var(--green);
   height: 100%;
   width: 100px;
@@ -208,9 +255,9 @@ main .dessert .card__check {
   justify-content: center;
   align-items: center;
 }
-main .entree .card__check i,
-main .plat .card__check i,
-main .dessert .card__check i {
+main .menu .entree .card__check i,
+main .menu .plat .card__check i,
+main .menu .dessert .card__check i {
   color: white;
   font-size: 35px;
 }
@@ -240,6 +287,8 @@ main .btn__commander {
 }
 main .btn__commander:hover {
   background: linear-gradient(to bottom, var(--button-light-pink), var(--button-light-purple));
+  transform: scale(1.1);
+  transition: 300ms;
 }
 
 footer {
@@ -248,6 +297,10 @@ footer {
   padding-bottom: 5px;
   color: white;
   height: 114px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 footer ul {
   list-style-type: none;
