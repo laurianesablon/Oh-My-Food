@@ -45,7 +45,7 @@ html {
     z-index: -20;
   }
 }
-#loader {
+/*#loader {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -58,31 +58,33 @@ html {
   animation: loader 1s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
-}
-#loader .ball {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  z-index: 40;
-  animation-iteration-count: 3;
-}
-#loader .one {
-  background-color: var(--pink);
-  animation: bounce 1s ease-in-out;
-}
-#loader .two {
-  background-color: var(--green);
-  animation: bounce 1s ease-in-out 0.33s;
-}
-#loader .three {
-  background-color: var(--purple);
-  animation: bounce 1s ease-in-out 0.66s;
-}
-#loader #loader--hidden {
-  opacity: O;
-  display: none;
-}
 
+
+  .ball {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: 40;
+    animation-iteration-count: 3;
+  }
+  .one {
+    background-color: var(--pink);
+    animation: bounce 1s ease-in-out ;
+  }
+  .two {
+    background-color: var(--green);
+    animation: bounce 1s ease-in-out 0.33s;
+
+  }
+  .three {
+    background-color: var(--purple);
+    animation: bounce 1s ease-in-out 0.66s ;
+  }
+  #loader--hidden {
+    opacity: O;
+    display: none
+  }
+}*/
 header {
   display: flex;
   flex-direction: column;
@@ -128,7 +130,7 @@ header p {
   margin-top: 0;
   padding-top: 30px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .explore h1 {
     font-size: 2.5em;
   }
@@ -161,7 +163,7 @@ header p {
   gap: 25px;
   padding-bottom: 30px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .fonctionnement {
     flex-direction: column;
   }
@@ -174,7 +176,7 @@ header p {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .fonctionnement__cards {
     display: flex;
     flex-direction: row;
@@ -196,7 +198,7 @@ header p {
   background-color: #f6f6f6;
   border-radius: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .fonctionnement article {
     flex-direction: row;
     justify-content: flex;
@@ -245,7 +247,7 @@ header p {
   width: 100%;
   padding-bottom: 50px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #restaurants div {
     flex-direction: row;
     justify-content: center;
@@ -263,7 +265,7 @@ header p {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #restaurants a .card__restaurants {
     width: 100%;
   }
@@ -281,7 +283,7 @@ header p {
   right: 15px;
   bottom: 15px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #restaurants a .card__restaurants i {
     bottom: 30px;
   }
@@ -309,7 +311,7 @@ header p {
   justify-content: space-between;
   color: black;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #restaurants a .card__restaurants .card-title {
     right: 15px;
   }
@@ -352,13 +354,16 @@ footer ul {
   margin: 0px;
   font-size: 16px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 40px;
+  }
+  footer ul li:nth-child(1) {
+    order: 2;
   }
 }
 footer ul li {
