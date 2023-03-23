@@ -45,6 +45,88 @@ html {
     z-index: -20;
   }
 }
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+header .top__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 15;
+  padding-top: 10px;
+}
+header .top__header a {
+  justify-self: start;
+  position: absolute;
+  margin-right: 90%;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 30px;
+}
+header .logo__header {
+  height: 36px;
+  padding-bottom: 10px;
+}
+header .img__header {
+  width: 100%;
+  top: 50px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  header .img__header {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 423px;
+  }
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  margin: 0px;
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  footer ul li:nth-child(1) {
+    order: 2;
+  }
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li i {
+  padding-right: 7px;
+}
+footer img {
+  width: 100px;
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -81,42 +163,6 @@ html {
 #loader #loader--hidden {
   opacity: O;
   display: none;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 113px;
-}
-header .top__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: white;
-  position: fixed;
-  top: 0px;
-  z-index: 15;
-  padding-top: 10px;
-}
-header .top__header .logo__header {
-  height: 36px;
-  padding-bottom: 10px;
-}
-header .loc__header {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: var(--main-background-color);
-  width: 100%;
-  text-align: center;
-  margin-top: 40px;
-}
-header p {
-  font-size: 23px;
-  font-weight: 500;
 }
 
 .explore {
@@ -333,42 +379,4 @@ header p {
   color: #008766;
   right: 10px;
   top: 10px;
-}
-
-footer {
-  background-color: var(--footer-color);
-  padding-top: 10px;
-  padding-bottom: 5px;
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-footer ul {
-  list-style-type: none;
-  color: white;
-  margin: 0px;
-  font-size: 16px;
-}
-@media (min-width: 1024px) {
-  footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  footer ul li:nth-child(1) {
-    order: 2;
-  }
-}
-footer ul li {
-  padding: 5px;
-}
-footer ul li i {
-  padding-right: 7px;
-}
-footer img {
-  width: 100px;
 }/*# sourceMappingURL=style.css.map */

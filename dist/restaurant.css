@@ -90,6 +90,44 @@ header .img__header {
   }
 }
 
+footer {
+  background-color: var(--footer-color);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  margin: 0px;
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  footer ul li:nth-child(1) {
+    order: 2;
+  }
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li i {
+  padding-right: 7px;
+}
+footer img {
+  width: 100px;
+}
+
 main {
   background-color: var(--main-background-color);
   border-radius: 20px 20px 0px 0px;
@@ -289,42 +327,4 @@ main .btn__commander:hover {
   background: linear-gradient(to bottom, var(--button-light-pink), var(--button-light-purple));
   transform: scale(1.1);
   transition: 300ms;
-}
-
-footer {
-  background-color: var(--footer-color);
-  padding-top: 10px;
-  padding-bottom: 5px;
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-footer ul {
-  list-style-type: none;
-  color: white;
-  margin: 0px;
-  font-size: 16px;
-}
-@media (min-width: 1024px) {
-  footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  footer ul li:nth-child(1) {
-    order: 2;
-  }
-}
-footer ul li {
-  padding: 5px;
-}
-footer ul li i {
-  padding-right: 7px;
-}
-footer img {
-  width: 100px;
 }/*# sourceMappingURL=restaurant.css.map */
