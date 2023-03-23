@@ -45,7 +45,7 @@ html {
     z-index: -20;
   }
 }
-/*#loader {
+#loader {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -58,33 +58,31 @@ html {
   animation: loader 1s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
+}
+#loader .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  z-index: 40;
+  animation-iteration-count: 3;
+}
+#loader .one {
+  background-color: var(--pink);
+  animation: bounce 1s ease-in-out;
+}
+#loader .two {
+  background-color: var(--green);
+  animation: bounce 1s ease-in-out 0.33s;
+}
+#loader .three {
+  background-color: var(--purple);
+  animation: bounce 1s ease-in-out 0.66s;
+}
+#loader #loader--hidden {
+  opacity: O;
+  display: none;
+}
 
-
-  .ball {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    z-index: 40;
-    animation-iteration-count: 3;
-  }
-  .one {
-    background-color: var(--pink);
-    animation: bounce 1s ease-in-out ;
-  }
-  .two {
-    background-color: var(--green);
-    animation: bounce 1s ease-in-out 0.33s;
-
-  }
-  .three {
-    background-color: var(--purple);
-    animation: bounce 1s ease-in-out 0.66s ;
-  }
-  #loader--hidden {
-    opacity: O;
-    display: none
-  }
-}*/
 header {
   display: flex;
   flex-direction: column;
@@ -342,7 +340,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 5px;
   color: white;
-  height: 114px;
 }
 footer a {
   text-decoration: none;

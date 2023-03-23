@@ -1,6 +1,6 @@
 @forward "globals";
 
-/*#loader {
+#loader {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -39,7 +39,7 @@
     opacity: O;
     display: none
   }
-}*/
+}
 
 header {
   display: flex;
@@ -307,8 +307,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 5px;
   color: white;
-  height: 114px;
-
   a {
     text-decoration: none;
     color: white;
