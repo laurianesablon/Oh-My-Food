@@ -49,6 +49,10 @@ footer {
     padding-top: 10px;
     padding-bottom: 5px;
     color: white;
+    @media (min-width: 1024px){
+        height: 122px
+
+    }
     a {
       text-decoration: none;
       color: white;
