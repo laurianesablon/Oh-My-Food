@@ -63,6 +63,9 @@ main {
         span {
           border-bottom: var(--green) 4px solid;
         }
+        @media (min-width: 1024px) {
+          width: 80%;
+        }
       }
       .card {
         background-color: white;

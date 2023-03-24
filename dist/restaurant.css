@@ -219,6 +219,13 @@ main .menu .plat h4 span,
 main .menu .dessert h4 span {
   border-bottom: var(--green) 4px solid;
 }
+@media (min-width: 1024px) {
+  main .menu .entree h4,
+  main .menu .plat h4,
+  main .menu .dessert h4 {
+    width: 80%;
+  }
+}
 main .menu .entree .card,
 main .menu .plat .card,
 main .menu .dessert .card {
