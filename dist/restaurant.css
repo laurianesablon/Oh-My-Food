@@ -164,11 +164,21 @@ main .top__main h1 {
   font-size: 34px;
   font-weight: 400;
 }
+main .top__main .coeur {
+  width: 34px;
+  height: 34px;
+  margin-right: 20px;
+}
+@media (min-width: 1024px) {
+  main .top__main .coeur {
+    width: 34px;
+    height: 34px;
+  }
+}
 main .top__main i {
   margin-right: 20px;
   font-size: 30px;
   position: absolute;
-  left: 70%;
 }
 main .top__main .fas {
   color: transparent;
