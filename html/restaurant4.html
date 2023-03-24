@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Oh My Food:le délice des sens</title>
-    <link rel="stylesheet" href="./dist/restaurant.css" />
+    <title>Oh My Food: À la française</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,114 +16,172 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../dist/restaurant.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
       <article class="top__header">
-        <a href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+        <a href="../index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
 
-        <img class="logo__header" src="./Photos/images/logo/ohmyfood.png" />
+        <img class="logo__header" src="../Photos/images/logo/ohmyfood.png" />
       </article>
 
       <img
         class="img__header"
-        src="./Photos/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        src="../Photos/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
       />
     </header>
     <main>
       <article class="top__main">
-        <h1>Le délice des sens</h1>
-        <i class="fa-regular fa-heart"></i>
+        <h1>À la française</h1>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
       </article>
-      <!--ENTREE-->
-      <article class="plat">
+      <section class="menu">
+<!--ENTREE-->
+      <article class="entree">
         <h4><span>ENTR</span>ÉES</h4>
-        <article class="card">
-          <h3 class="card__title">Tartare de thon</h3>
-          <div class="card__content">
-            <p>Assaisonné au yuzu</p>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Tartare de poulpe acidulé</h4>
+            <p>Aux zestes d'orange</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">25€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Bouchée de homard croustillant</h3>
-          <div class="card__content">
-            <p>Et sa farandole de petits légumes</p>
+        </div>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Velouté de légumes d'antan</h4>
+            <p>Carotte, panais, topinambour</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">35€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Velouté de cèpes</h3>
-          <div class="card__content">
-            <p>Aux truffes</p>
+        </div>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Soupe à l'oignon</h4>
+            <p>Revisitée</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">20€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
+        </div>
       </article>
 
       <!--PLATS-->
-      <article class="entrée">
+      <article class="plat">
         <h4><span>PLAT</span>S</h4>
-        <article class="card">
-          <h3 class="card__title">Poulet rôti aux herbes de Provence</h3>
-          <div class="card__content">
-            <p>Et sa crème de truffe</p>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Coquilles Saint-Jacques</h4>
+            <p>Accompagnées d'une purée de panais</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">40€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Langouste rôtie</h3>
-          <div class="card__content">
-            <p>Et ses légumes de saison</p>
+        </div>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Magret de canard</h4>
+            <p>Et parmentier de pommes de terre</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">35€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Côte de bœuf Angus</h3>
-          <div class="card__content">
-            <p>Et sa purée de panais</p>
+        </div>
+
+        <div class="card">
+          <div class="card__left">
+            <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+            <p>Sur son lit de gnocchis aux légumes</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">44€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
+        </div>
       </article>
 
       <!--DESSERT-->
       <article class="dessert">
         <h4><span>DESS</span>ERTS</h4>
-        <article class="card">
-          <h3 class="card__title">Farandole de desserts</h3>
-          <div class="card__content">
-            <p>Du chef</p>
+        <div class="card">
+          <div class="card__left">
+            <h4>Pétales de violettes glacés</h4>
+            <p>Et purée de noisettes</p>
+          </div>
+          <div class="card__right">
             <p class="card__price">18€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Crème brulée</h3>
-          <div class="card__content">
-            <p>Revisitée</p>
-            <p class="card__price">22€</p>
-          </div>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Tiramisu</h3>
-          <div class="card__content">
-            <p>À la noisette</p>
-            <p class="card__price">23€</p>
-          </div>
-        </article>
+        </div>
 
-        <button class="btn__commander">Commander</button>
+        <div class="card">
+          <div class="card__left">
+            <h4>Fondant au chocolat</h4>
+            <p>Revisité</p>
+          </div>
+          <div class="card__right">
+            <p class="card__price">22€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__left">
+            <h4>Millefeuille croustillant</h4>
+            <p>Myrtilles et pâte d’amande</p>
+          </div>
+          <div class="card__right">
+            <p class="card__price">23€</p>
+            <div class="card__check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+          <button class="btn__commander">Commander</button>
+
+      </section>
+
       </article>
+
     </main>
     <footer>
       <nav>
         <ul>
-          <li><img src="./Photos/images/logo/ohmyfood@2x.svg" /></li>
+          <li><img src="../Photos/images/logo/ohmyfood@2x.svg" /></li>
           <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
           <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
           <li>Mentions légales</li>
-          <li>Contact</li>
+          <li><a href="mailto:laurianesablon75@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </footer>
