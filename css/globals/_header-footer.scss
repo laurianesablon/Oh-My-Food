@@ -11,9 +11,6 @@ header {
       align-items: center;
       width: 100%;
       background-color: white;
-      position: fixed;
-      top: 0px;
-      z-index: 15;
       padding-top: 10px;
   
       a {
@@ -25,6 +22,19 @@ header {
         font-size: 30px;
       }
     }
+    .loc__header {
+      background-color: #EAEAEA;
+      display: flex;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+        i {
+          color: #353535;
+        }
+    }
   
     .logo__header {
       height: 36px;
@@ -33,8 +43,6 @@ header {
     .img__header {
       width: 100%;
       height: 275px;
-      top: 50px;
-      position: relative;
       z-index: 1;
       object-fit: cover;
       @media (min-width: 1024px) {
@@ -43,8 +51,6 @@ header {
       }
     }
   }
-
-
 
 footer {
     background-color: var(--footer-color);

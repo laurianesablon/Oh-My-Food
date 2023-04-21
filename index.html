@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="UTF-8">
     <title>Oh My Food</title>
     <link
       rel="stylesheet"
@@ -8,31 +9,34 @@
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./dist/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    >
+    <link rel="stylesheet" href="./dist/style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   </head>
   <body>
-
     <section id="loader">
-        <div class="ball one"></div>
-        <div class="ball two"></div>
-        <div class="ball three"></div>
+      <div class="ball one"></div>
+      <div class="ball two"></div>
+      <div class="ball three"></div>
     </section>
 
     <header>
       <article class="top__header">
-        <img class="logo__header" src="./Photos/images/logo/ohmyfood.png" />
+        <img
+          class="logo__header"
+          src="./Photos/images/logo/ohmyfood.png"
+          alt="logo oh my food"
+        >
       </article>
       <article class="loc__header">
-        <img src="./Photos/images/Pictogrammes/Pin.svg" />
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
         <p>Paris, Belleville</p>
       </article>
     </header>
     <section class="explore">
       <h1>Réservez le menu qui vous convient</h1>
       <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-      <a href="#restaurants"><button>Explorer nos restaurants</button></a>
+      <a href="#restaurants" class="button">Explorer nos restaurants</a>
     </section>
 
     <section class="fonctionnement">
@@ -52,7 +56,7 @@
         </article>
         <article>
           <p class="nbr">3</p>
-          <img src="./Photos/images/Pictogrammes/enseigne.svg" />
+          <i class="fa-sharp fa-solid fa-store"></i>
           <p>Dégustez au restaurant</p>
         </article>
       </div>
@@ -68,7 +72,8 @@
           <article class="card__restaurants nouveau">
             <img
               src="./Photos/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            />
+              alt="Image d'un plat"
+            >
             <p class="card-title">La palette du gout</p>
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
@@ -79,7 +84,8 @@
           <article class="card__restaurants nouveau">
             <img
               src="./Photos/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-            />
+              alt="Image d'un plat"
+            >
             <p class="card-title">La note enchantée</p>
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
@@ -90,19 +96,21 @@
           <article class="card__restaurants">
             <img
               src="./Photos/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            />
+              alt="Image d'un plat"
+            >
+            
             <p class="card-title">À la française</p>
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
             <p class="card-text">Ménilmontant</p>
-            
           </article>
         </a>
         <a href="./html/restaurant4.html">
           <article class="card__restaurants">
             <img
               src="./Photos/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-/>
+              alt="Image d'un plat"
+            >
             <p class="card-title">Le délice des sens</p>
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
@@ -114,11 +122,15 @@
     <footer>
       <nav>
         <ul>
-          <li><img src="./Photos/images/logo/ohmyfood@2x.svg" /></li>
+          <li><img src="./Photos/images/logo/ohmyfood@2x.svg" alt="logo de oh my food"></li>
           <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
           <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
           <li>Mentions légales</li>
-          <li><a href="mailto:laurianesablon75@gmail.com" target="blank">Contact</a></li>
+          <li>
+            <a href="mailto:laurianesablon75@gmail.com" target="blank"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </footer>

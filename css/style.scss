@@ -40,7 +40,9 @@
     display: none
   }
 }
-
+a {
+  text-decoration: none;
+}
 .explore {
   text-align: center;
   background-color: #f6f6f6;
@@ -56,8 +58,10 @@
     font-size: 18px;
     font-weight: 300;
   }
-  button {
-    height: 50px;
+  .button {
+    margin: 0 auto;
+    display: block;
+    padding:15px;
     width: 218px;
     font-size: 16px;
     background: linear-gradient(to bottom, var(--pink), var(--purple));
@@ -65,8 +69,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.123);
+      a {
+          color: white;
+
+      }
   }
-  button:hover {
+  .button:hover {
     background: linear-gradient(
       to bottom,
       var(--button-light-pink),
@@ -149,7 +157,9 @@
   article:hover {
     transform: scale(1.03);
     background-color: var(--light-purple);
-
+    i {
+      color:  var(--purple);
+    }
   }
 }
 
