@@ -236,9 +236,6 @@ footer img {
     justify-content: center;
   }
 }
-.fonctionnement .light-purple {
-  background-color: var(--light-purple);
-}
 .fonctionnement article {
   display: flex;
   align-items: center;
@@ -277,6 +274,7 @@ footer img {
 }
 .fonctionnement article:hover {
   transform: scale(1.03);
+  background-color: var(--light-purple);
 }
 
 #restaurants {
@@ -304,6 +302,7 @@ footer img {
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    overflow: scroll;
   }
 }
 #restaurants a {
