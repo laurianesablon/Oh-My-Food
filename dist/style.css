@@ -277,7 +277,6 @@ a {
 @media (min-width: 1024px) {
   .fonctionnement article {
     flex-direction: row;
-    justify-content: flex;
   }
 }
 .fonctionnement article i {
