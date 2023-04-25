@@ -318,6 +318,7 @@ main .menu .dessert .card__price {
   margin-right: 20px;
   align-self: end;
   transform: translateX(100px);
+  transition: transform 400ms ease-in-out;
 }
 main .menu .entree .card__check,
 main .menu .plat .card__check,
@@ -330,6 +331,7 @@ main .menu .dessert .card__check {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 500ms ease-in-out;
 }
 main .menu .entree .card__check i,
 main .menu .plat .card__check i,
@@ -343,7 +345,7 @@ main .card:hover .card__check {
 }
 main .card:hover .card__price {
   transform: translateX(0px);
-  transition: 500ms;
+  transition: transform 400ms ease-in-out;
 }
 main .card:hover i {
   transform: rotate(-365deg);
