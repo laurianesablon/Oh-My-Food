@@ -59,6 +59,9 @@ header .top__header {
   align-items: center;
   width: 100%;
   background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 15;
   padding-top: 10px;
 }
 header .top__header a {
@@ -71,6 +74,8 @@ header .top__header a {
 }
 header .loc__header {
   background-color: #EAEAEA;
+  position: relative;
+  top: 50px;
   display: flex;
   height: 50px;
   width: 100%;
@@ -79,9 +84,6 @@ header .loc__header {
   align-items: center;
   gap: 15px;
 }
-header .loc__header i {
-  color: #353535;
-}
 header .logo__header {
   height: 36px;
   padding-bottom: 10px;
@@ -89,6 +91,8 @@ header .logo__header {
 header .img__header {
   width: 100%;
   height: 275px;
+  top: 50px;
+  position: relative;
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -142,10 +146,6 @@ footer ul li i {
 }
 footer img {
   width: 100px;
-}
-
-.loc__header {
-  display: none;
 }
 
 main {
@@ -318,7 +318,6 @@ main .menu .dessert .card__price {
   margin-right: 20px;
   align-self: end;
   transform: translateX(100px);
-  transition: transform 400ms ease-in-out;
 }
 main .menu .entree .card__check,
 main .menu .plat .card__check,
@@ -331,7 +330,6 @@ main .menu .dessert .card__check {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 500ms ease-in-out;
 }
 main .menu .entree .card__check i,
 main .menu .plat .card__check i,
@@ -345,7 +343,7 @@ main .card:hover .card__check {
 }
 main .card:hover .card__price {
   transform: translateX(0px);
-  transition: transform 400ms ease-in-out;
+  transition: 500ms;
 }
 main .card:hover i {
   transform: rotate(-365deg);

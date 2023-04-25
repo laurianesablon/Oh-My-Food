@@ -1,9 +1,5 @@
 @forward "globals";
 
-.loc__header {
-  display: none
-}
-
 
 main {
   background-color: var(--main-background-color);
@@ -130,8 +126,6 @@ main {
           margin-right: 20px;
           align-self: end;
           transform: translateX(100px);
-          transition: transform 400ms ease-in-out;
-
         }
         &__check {
           background-color: var(--green);
@@ -142,7 +136,6 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: transform 500ms ease-in-out;
           i {
             color: white;
             font-size: 35px;
@@ -159,7 +152,7 @@ main {
     }
     .card__price {
       transform: translateX(0px);
-      transition: transform 400ms ease-in-out;
+      transition: 500ms;
     }
     i {
       transform: rotate(-365deg);
@@ -189,4 +182,3 @@ main {
     transition: transform 0.3s ease-in-out;
   }
 }
-
