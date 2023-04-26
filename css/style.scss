@@ -1,6 +1,6 @@
 @forward "globals";
 
-/*#loader {
+#loader {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -39,7 +39,8 @@
     opacity: O;
     display: none
   }
-}*/
+}
+
 a {
   text-decoration: none;
 }
